@@ -1,0 +1,19 @@
+
+doctype html
+html
+head
+title= 'Error - ' + status
+style= 'body {padding: 50px 80px;font: 14px "Helvetica Neue", Helvetica, sans-serif;}h1, h2 {margin: 0;padding: 10px 0;}h1 {font-size: 2em;}h2 {font-size: 1.2em;font-weight: 200;color: #aaa;}pre {font-size: .8em;}'
+body
+#error
+h1 Error
+p Looks like something broke!
+if env == 'development'
+h2 Message:
+p= status
+pre: code=  error
+h2 Stack:
+pre: code= stack
+
+
+

@@ -1,0 +1,29 @@
+# http://editorconfig.org 定义代码样式
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Set default charset 
+charset = utf-8
+# 4 space indentation
+indent_style = space
+indent_size = 4
+
+ # Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+ 
+#个别文件覆盖设置
+[{package.json, .travis.yml}]
+indent_style = space
+indent_size = 2 
+
+
+# Matches multiple files with brace expansion notation
+[*.{md,yml}]
+trim_trailing_whitespace = false
